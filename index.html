@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: grid;
+            border: 7px solid rgb(150, 15, 15);
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            gap:10px;
+            padding: 10px;
+            width: 80%;
+        }
+        .chc{
+            display:flex;
+            border: 3px solid rgb(133, 99, 89);
+            height: 180px;
+            align-items: center;
+            justify-content: center;
+        }
+        #chc1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: antiquewhite;
+        }
+        #chc2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            height: 370px;
+            width: 80%;
+            margin-top: -115px;
+            background-color: orchid;
+
+        }
+        #chc3{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 119%;
+            margin-left: -120px; 
+            height: 370px;
+            margin-top: -115px;
+            background-color: burlywood;
+        }
+        #chc4{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            width: 45%;
+            height: 370px;
+            margin-top: -45px;
+            margin-left: 550px;
+            background-color: bisque;
+        }
+        #chc5{
+            grid-column-start:2;
+            grid-column-end: 3;
+            width: 105%;
+            height: 370px;
+            margin-left: -530px;
+            margin-top: -384px;
+            background-color: tan;
+        } #chc6{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: rgb(151, 150, 148);
+            margin-top: 15px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="chc" id="chc1"></div>
+        <div class="chc" id="chc2"></div>
+        <div class="chc" id="chc3"></div>
+        <div class="chc" id="chc4"></div>
+        <div class="chc" id="chc5"></div>
+        <div class="chc" id="chc6"></div>
+    </div>
+</body>
+</html>
